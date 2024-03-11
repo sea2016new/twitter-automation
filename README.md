@@ -1,65 +1,57 @@
-# Софт для автоматизации твиттер фермы
+软件用于自动化推特农场
+我的Telegram频道（关注更新）- https://t.me/easypeoff
 
-**Мой тг канал (следите за обновлениями) - https://t.me/easypeoff**
+安装
+方法1：
 
-## Установка
-
-**Способ 1**
-
-- Создать виртуальное окружение
-
-```
+创建虚拟环境
+```bash
 python -m venv venv
 ```
-
-- Активировать виртуальное окружение (нужно будет делать каждый раз перед запуском софта)
-
-Для пользователей Windows:
-
-```
+激活虚拟环境（每次运行软件前都需要做这一步）
+Windows用户：
+```bash
 venv/Scripts\activate
 ```
-Для пользователей Mac и linux:
-
-```
+Mac和Linux用户：
+```bash
 source venv/Scripts/activate
 ```
-
-- Установить зависимости
-```
+安装依赖
+```bash
 pip install -r requirements.txt
 ```
+方法2：
 
-**Способ 2**
-- Установить poetry https://python-poetry.org/docs/
+安装poetry https://python-poetry.org/docs/
 
-- Активировать виртуальное окружение (нужно будет делать каждый раз перед запуском софта)
-```
+激活虚拟环境（每次运行软件前都需要做这一步）
+
+```bash
 poetry shell
 ```
-- Установить зависимости
-
-```
+安装依赖
+```bash
 poetry install
 ```
+配置
+配置详细指南 - https://teletype.in/@easypeoff/twitter-automation
 
-## Настройка
-**Подробный гайд по настройке - https://teletype.in/@easypeoff/twitter-automation**
+config.py - 主配置文件
 
-config.py - основной файл с настройками
+modules_settings.py - 模块设置
 
-modules_settings.py - настройки модулей
+在data/目录下可以找到所需文件的示例
 
-В data/ находятся примеры нужных файлов
+data/accounts.txt - Twitter的认证token
 
-data/accounts.txt - auth token'ы твиттеров
+data/proxies.txt - 代理
 
-data/proxies.txt - прокси
+data/user_agents.txt - 浏览器标识符
 
-data/user_agents.txt - идентификаторы браузера
+启动
+在激活的虚拟环境中（见安装）
 
-## Запуск
-В активированном виртуальном окружении (см. установку)
-```
+```bash
 python main.py
 ```
