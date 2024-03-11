@@ -1,5 +1,4 @@
-软件用于自动化推特农场
-我的Telegram频道（关注更新）- https://t.me/easypeoff
+软件用于推特自动化
 
 安装
 方法1：
